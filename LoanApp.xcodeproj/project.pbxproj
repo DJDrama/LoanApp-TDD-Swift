@@ -19,6 +19,9 @@
 		D250548C2CE0E1EE00BB387E /* LoanAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250548B2CE0E1EE00BB387E /* LoanAppUITestsLaunchTests.swift */; };
 		D25054932CE0E2C000BB387E /* MockedCreditScoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25054922CE0E2C000BB387E /* MockedCreditScoreService.swift */; };
 		D25054952CE0E4A400BB387E /* credit-score-response.json in Resources */ = {isa = PBXBuildFile; fileRef = D25054942CE0E4A400BB387E /* credit-score-response.json */; };
+		D25054982CE0EFD300BB387E /* RegistrationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25054972CE0EFD300BB387E /* RegistrationScreen.swift */; };
+		D250549B2CE0F07D00BB387E /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250549A2CE0F07D00BB387E /* String+Extensions.swift */; };
+		D250549D2CE0F0FF00BB387E /* RegistrationScreenTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250549C2CE0F0FF00BB387E /* RegistrationScreenTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,9 @@
 		D250548B2CE0E1EE00BB387E /* LoanAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D25054922CE0E2C000BB387E /* MockedCreditScoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedCreditScoreService.swift; sourceTree = "<group>"; };
 		D25054942CE0E4A400BB387E /* credit-score-response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "credit-score-response.json"; sourceTree = "<group>"; };
+		D25054972CE0EFD300BB387E /* RegistrationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationScreen.swift; sourceTree = "<group>"; };
+		D250549A2CE0F07D00BB387E /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		D250549C2CE0F0FF00BB387E /* RegistrationScreenTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationScreenTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,8 @@
 		D250545E2CE0DF8E00BB387E /* LoanApp */ = {
 			isa = PBXGroup;
 			children = (
+				D25054992CE0F06F00BB387E /* Extensions */,
+				D25054962CE0EFC000BB387E /* Screens */,
 				D250546F2CE0E00300BB387E /* Custom Errors */,
 				D250546E2CE0DFFE00BB387E /* Models */,
 				D250546D2CE0DFFA00BB387E /* Services */,
@@ -153,6 +161,7 @@
 				D25054942CE0E4A400BB387E /* credit-score-response.json */,
 				D250547C2CE0E1B400BB387E /* LoanAppTests.swift */,
 				D25054922CE0E2C000BB387E /* MockedCreditScoreService.swift */,
+				D250549C2CE0F0FF00BB387E /* RegistrationScreenTest.swift */,
 			);
 			path = LoanAppTests;
 			sourceTree = "<group>";
@@ -164,6 +173,22 @@
 				D250548B2CE0E1EE00BB387E /* LoanAppUITestsLaunchTests.swift */,
 			);
 			path = LoanAppUITests;
+			sourceTree = "<group>";
+		};
+		D25054962CE0EFC000BB387E /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				D25054972CE0EFD300BB387E /* RegistrationScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		D25054992CE0F06F00BB387E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D250549A2CE0F07D00BB387E /* String+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,6 +322,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D25054982CE0EFD300BB387E /* RegistrationScreen.swift in Sources */,
+				D250549B2CE0F07D00BB387E /* String+Extensions.swift in Sources */,
 				D25054622CE0DF8E00BB387E /* ContentView.swift in Sources */,
 				D25054712CE0E01800BB387E /* APRService.swift in Sources */,
 				D25054732CE0E12600BB387E /* CreditScoreError.swift in Sources */,
@@ -309,6 +336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D250549D2CE0F0FF00BB387E /* RegistrationScreenTest.swift in Sources */,
 				D25054932CE0E2C000BB387E /* MockedCreditScoreService.swift in Sources */,
 				D250547D2CE0E1B400BB387E /* LoanAppTests.swift in Sources */,
 			);
