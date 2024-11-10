@@ -7,24 +7,30 @@
 
 import SwiftUI
 
+struct RegistrationForm {
+    @State var firstName: String = ""
+    @State var lastName: String = ""
+    @State var ssn: String = ""
+    
+    var isValid: Bool {
+        !firstName.isEmptyOrWhiteSpace
+        && !lastName.isEmptyOrWhiteSpace
+        && ssn.isSSN
+    }
+}
+
 struct RegistrationScreen: View {
     
-    @State private var firstName: String = ""
-    @State private var lastName: String = ""
-    @State private var ssn: String = ""
-    
-    private var isFormValid: Bool {
-        !firstName.isEmptyOrWhiteSpace && !lastName.isEmptyOrWhiteSpace && ssn.isSSN
-    }
+    @State private var registrationForm = RegistrationForm()
     
     var body: some View {
         Form {
-            TextField("First name", text: $firstName)
-            TextField("Last name", text: $lastName)
-            TextField("SSN", text: $ssn)
+            TextField("First name", text: $registrationForm.firstName)
+            TextField("Last name", text: $registrationForm.lastName)
+            TextField("SSN", text: $registrationForm.ssn)
             Button("Save") {
                 
-            }.disabled(!isFormValid)
+            }.disabled(!registrationForm.isValid)
         }
     }
 }

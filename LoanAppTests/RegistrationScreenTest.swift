@@ -10,6 +10,31 @@ import XCTest
 
 final class RegistrationScreenTest: XCTestCase {
     
+    func testRegistrationFormValid() {
+        let testData = [
+            ("DJ", "Lee", "123-45-1232"),
+            ("HOO", "HAHA", "678-49-1020"),
+            ("DID", "DO", "532-15-2444")
+        ]
+        
+        for (firstName, lastName, ssn) in testData {
+            let registrationForm = RegistrationForm(firstName: firstName, lastName: lastName, ssn: ssn)
+            XCTAssertTrue(registrationForm.isValid, "\(firstName) \(lastName) with SSN \(ssn) should be valid!")
+        }
+    }
+    
+    func testRegistrationFormInvalid() {
+        let testData = [
+            ("DJ", "Lee", "123-45-122"),
+            ("HOO", "", "678-49-1020"),
+            ("", "DO", "532-15-2444")
+        ]
+        
+        for (firstName, lastName, ssn) in testData {
+            let registrationForm = RegistrationForm(firstName: firstName, lastName: lastName, ssn: ssn)
+            XCTAssertFalse(registrationForm.isValid, "\(firstName) \(lastName) with SSN \(ssn) should be valid!")
+        }
+    }
    
     func testIsSSN() {
         let validSSNs = ["123-34-1234", "142-32-1232", "111-44-5555"]
