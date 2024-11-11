@@ -21,7 +21,7 @@ struct LoanAppApp: App {
             // if running in test mode then set the url to test
             
             if ProcessInfo.processInfo.arguments.contains("UITEST") {
-                // Set the contained staging URL
+                // Set the contained testing URL
                 baseURL = URL(string: "https://island-bramble.glitch.me")!
             }
             

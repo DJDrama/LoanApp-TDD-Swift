@@ -16,7 +16,6 @@
 		D25054752CE0E12F00BB387E /* CreditScoreResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25054742CE0E12F00BB387E /* CreditScoreResponse.swift */; };
 		D250547D2CE0E1B400BB387E /* LoanAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250547C2CE0E1B400BB387E /* LoanAppTests.swift */; };
 		D250548A2CE0E1EE00BB387E /* LoanAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25054892CE0E1EE00BB387E /* LoanAppUITests.swift */; };
-		D250548C2CE0E1EE00BB387E /* LoanAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250548B2CE0E1EE00BB387E /* LoanAppUITestsLaunchTests.swift */; };
 		D25054932CE0E2C000BB387E /* MockedCreditScoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25054922CE0E2C000BB387E /* MockedCreditScoreService.swift */; };
 		D25054952CE0E4A400BB387E /* credit-score-response.json in Resources */ = {isa = PBXBuildFile; fileRef = D25054942CE0E4A400BB387E /* credit-score-response.json */; };
 		D25054982CE0EFD300BB387E /* RegistrationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25054972CE0EFD300BB387E /* RegistrationScreen.swift */; };
@@ -54,7 +53,6 @@
 		D250547C2CE0E1B400BB387E /* LoanAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanAppTests.swift; sourceTree = "<group>"; };
 		D25054872CE0E1EE00BB387E /* LoanAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoanAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D25054892CE0E1EE00BB387E /* LoanAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanAppUITests.swift; sourceTree = "<group>"; };
-		D250548B2CE0E1EE00BB387E /* LoanAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D25054922CE0E2C000BB387E /* MockedCreditScoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedCreditScoreService.swift; sourceTree = "<group>"; };
 		D25054942CE0E4A400BB387E /* credit-score-response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "credit-score-response.json"; sourceTree = "<group>"; };
 		D25054972CE0EFD300BB387E /* RegistrationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationScreen.swift; sourceTree = "<group>"; };
@@ -170,7 +168,6 @@
 			isa = PBXGroup;
 			children = (
 				D25054892CE0E1EE00BB387E /* LoanAppUITests.swift */,
-				D250548B2CE0E1EE00BB387E /* LoanAppUITestsLaunchTests.swift */,
 			);
 			path = LoanAppUITests;
 			sourceTree = "<group>";
@@ -346,7 +343,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D250548C2CE0E1EE00BB387E /* LoanAppUITestsLaunchTests.swift in Sources */,
 				D250548A2CE0E1EE00BB387E /* LoanAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
